@@ -4,10 +4,10 @@ Version=1.0
 Name=XAMPP
 Type=Application
 MimeType=application/x-desktop
-Categories=Network;Development
 Comment=Start XAMPP graphical Control Panel
-Exec=bash -c 'if type gksudo; then gksudo /opt/lampp/manager-linux-x64.run;elif type pkexec; then pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY /opt/lampp/manager-linux-x64.run; else if type zenity; then zenity --info --text="You must have gksudo or pkexec installed to be able to run XAMPP from desktop icon";fi;fi'
-Icon=/opt/lampp/htdocs/favicon.ico   #Icon=/opt/lampp/apache2/htdocs/lampstack.png #-- another icon location
+Exec=bash -c 'if type gksudo; then gksudo /opt/lampp/manager-linux-x64.run; elif type pkexec; then pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY /opt/lampp/manager-linux-x64.run; else if type zenity; then zenity --info --text="You must have gksudo or pkexec installed to be able to run XAMPP from desktop icon";fi;fi'
+Icon=/opt/lampp/htdocs/favicon.ico
 Encoding=UTF-8
-Terminal=0
-StartupNotify=0
+Terminal=false
+StartupNotify=false
+Categories=Network;Development
